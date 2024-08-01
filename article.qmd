@@ -1,5 +1,5 @@
 ---
-title: La Palma Earthquakes
+title: AMR-SDG interaction
 author:
   - name: Luong Nguyen Thanh
     orcid: 0000-0002-9270-9345
@@ -37,6 +37,7 @@ citation:
 draft: false
 bibliography: references.bib
 image: images/la-palma-eruption-2022-paper.png
+thumbnail: images/la-palma-eruption-2022-paper.png
 ---
 
 ## Introduction
