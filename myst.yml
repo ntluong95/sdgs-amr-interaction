@@ -1,65 +1,58 @@
 # See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  title: La Palma Seismicity 2021
-  subtitle: An analysis of earthquake swarms in relation to the 2021 eruption
-  authors:
-    - id: spurves
-      name: Steve Purves
-      orcid: 0000-0002-0760-5497
+  title: AMR-SDG Interaction
+  subtitle: An analysis of ten case studies
+  author:
+    - name: Luong Nguyen Thanh
+      orcid: 0000-0002-9270-9345
+      email: nguyen.luong@uu.se
+      affiliations:
+        - ref: swedesd
+        - ref: kva
+        - ref: uac
       corresponding: true
-      email: steve@curvenote.com
-      roles:
-        - Investigation
-        - Project administration
-        - Software
-        - Visualization
-      affiliations:
-        - curvenote
-    - id: rcockett
-      name: Rowan Cockett
-      orcid: 0000-0002-7859-8394
-      corresponding: false
-      role: Project administration
-      affiliations:
-        - curvenote
+
   affiliations:
-    - id: curvenote
-      name: Curvenote Inc.
-      department: Publications Team
-      country: Canada
-      url: https://curvenote.com
-      email: support@curvenote.com
-      phone: 123-456-7890
-      fax: 123-456-7891
-  github: https://github.com/Notebooks-Now/submission-myst-full/
+    - id: swedesd
+      name: Sustainability Learning and Research Centre
+      address: MTC-huset, Dag Hammarskjöldsväg 14B, 75237 Uppsala
+
+    - id: kva
+      name: Kungliga Vetenskapsuniversitetet
+      address:  Lilla Frescativägen 4A, 114 18 Stockholm
+
+    - id: uac
+      name: Uppsala Antibiotic Centre
+      address: BMC, SciLifeLab Entrance C11, Room E10:4210, 752 37 Uppsala
+  github: https://github.com/ntluong95/sdgs-amr-interaction
   open_access: true
   license:
     content: CC-BY-SA-4.0
     code: MIT
-  funding:
-    - statement: Supported by Notebooks Now! at AGU
-      id: 10070
-      source:
-        - name: Alfred P. Sloan Foundation
-          doi: http://dx.doi.org/10.13039/100000879
+  # funding:
+  #   - statement: Supported by Notebooks Now! at AGU
+  #     id: 10070
+  #     source:
+  #       - name: Alfred P. Sloan Foundation
+  #         doi: http://dx.doi.org/10.13039/100000879
   subject: Original Submission
   venue:
-    title: Notebooks Now!
-    url: https://data.agu.org/notebooks-now/
+    title: Preprint version
+    url: https://github.com/ntluong95/sdgs-amr-interaction
   keywords:
-    - La Palma
-    - Earthquakes
-  date: 2022-10-11
-  requirements:
-    - environment.yml
-  resources:
-    - README.md
-    - data/catalogoComunSV_1663233588717.csv
-    - data/lapalma_ign.csv
+    - AMR
+    - SDGs
+  date: 2024-08-01
+  # requirements:
+  #   - environment.yml
+  # resources:
+  #   - README.md
+  #   - data/catalogoComunSV_1663233588717.csv
+  #   - data/lapalma_ign.csv
   banner: ./images/banner.png
   options:
-    journal_name: Notebooks Now!
+    journal_name: Preprint version!
     draft: false
   exports:
     - format: meca
@@ -68,9 +61,7 @@ project:
     - format: jats
       article: article.md
       sub_articles:
-        - notebooks/seismic-monitoring.md
-        - notebooks/data-screening.ipynb
-        - notebooks/visualization-figure-creation-seaborn.ipynb
+        - docs/notebooks/method-drafts.out.ipynb
     - format: pdf
       article: article.md
       output: article.pdf
