@@ -1,0 +1,50 @@
+---
+title: "Mixed R and Python code"
+date: "2024-08-01"
+format: html
+---
+
+```{python}
+import pandas as pd
+import numpy as np
+```
+
+
+```{python}
+data = pd.read_csv('../data/lapalma_ign.csv')
+data.head()
+```
+
+
+```{r}
+pacman::p_load(
+    rio,          # File import
+    here,         # File locator
+    gtsummary,    # summary statistics and tests
+    rstatix,      # summary statistics and statistical tests
+    janitor,      # adding totals and percents to tables
+    tidyverse     # data management + ggplot2 graphics
+)
+```
+
+
+```{r}
+data <- import("../data/lapalma_ign.csv")
+head(data)
+```
+
+
+```{r}
+library(plotly)
+library(tidyverse)
+
+g <- iris %>%
+  ggplot(data = ., mapping = aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point()
+
+plotly::ggplotly(g)
+```
+
+```{r}
+DT::datatable(iris)
+```

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "manuscript-template"
+version = "0.1.0"
+description = "This is a template for a scientific writing with Quarto or Mystmd"
+authors = ["Luong Nguyen Thanh <ph.ntluong95@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipykernel = "^6.29.5"
+pandas = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
